@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Página 02</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33;}
+        .col-5 {width: 41.66;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33;}
+        .col-8 {width: 66.66;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33;}
+        .col-11 {width: 91.66;}
+        .col-12 {width: 100%;}
+/* Todas essas colunas devem flutuar para a esquerda e ter um preenchimento de 15 px:*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+}
+
+/*moblile*/
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+.linha::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+html {
+    font-family: "Lucida Sans" , sans-serif;
+}
+.cabecalho {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>São Paulo</h1>
+    </div>
+   
+
+<div class="linha" >
+    <div class="col-3 menu">
+        <ul>
+            <li>Localização</li>
+            <li>Cultura</li>
+            <li>Sotaque</li>
+            <li>Comidas</li>
+        </ul>
+    </div>
+    <div class="col-9">
+        <h1>A cidade</h1>
+        <p>É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul.[11] São Paulo é a cidade brasileira mais influente no cenário global, sendo, em 2016, a 11.ª cidade mais globalizada do planeta</p>
+        <p>Redimensione a janela do navegador para ver como o conteúdo responde ao redimensionamento.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <a href="index.html">Voltar</a>
+    
+</body>
+</html>
