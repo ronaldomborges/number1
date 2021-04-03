@@ -29,11 +29,7 @@
 
 }
 
-/*moblile*/
-@media only screen and (max-width: 768px) {
-    [class*="col-"] {
-        width: 100%;
-    }
+
 }
 .linha::after {
     content: "";
@@ -67,15 +63,27 @@ html {
 .col-2 {
     background-color: black;
     color: white;
+    width: 33%;
+    height: 350px;
   
+}
+.col-4 {
+    width: 33%;
+    height: 350px;
 }
 
 .col-6 {
     background-color: black;
     color: white;
-    width: 100%;
+    width: 33%;
+    height: 350px;
    
 }
+/*moblile*/
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
 
     </style>
 </head>
