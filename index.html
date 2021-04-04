@@ -155,7 +155,12 @@ img {
 
 
 
-
+    <script>
+        var nome = window.prompt('Qual é o seu nome ?')
+        document.writeln(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras<br>`) 
+        document.writeln(`Seu nome em maiúsculas é <em>${nome.toUpperCase()}</em> <br>`)
+        document.write(`Seu nome em minúsculas é <strong>${nome.toLocaleLowerCase()}</strong>`)
+    </script> 
    
     
 </body>
